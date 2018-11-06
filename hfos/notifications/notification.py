@@ -33,9 +33,9 @@ Notification: A configurable notification
 
 """
 
-from hfos.schemata.defaultform import editbuttons
-from hfos.schemata.base import base_object
-from hfos.misc import i18n as _
+from isomer.schemata.defaultform import editbuttons
+from isomer.schemata.base import base_object
+from isomer.misc import i18n as _
 
 NotificationSchema = base_object('notification',
                                  roles_read=['admin'],

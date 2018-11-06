@@ -42,9 +42,9 @@ This software package is a plugin module for isomer.
       install_requires=[
           'hfos>=1.2.0'
       ],
-      entry_points="""[hfos.components]
+      entry_points="""[isomer.components]
     notifications=hfos.notifications.notificationmanager:NotificationManager
-    [hfos.schemata]
+    [isomer.schemata]
     notification=hfos.notifications.notification:Notification
     """,
       test_suite="tests.main.main",

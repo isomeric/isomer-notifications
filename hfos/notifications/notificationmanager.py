@@ -31,9 +31,9 @@ Module NotificationManager
 """
 
 from circuits import Event
-from hfos.component import ConfigurableComponent, handler
-from hfos.debugger import cli_register_event
-from hfos.logger import events, verbose, debug, warn, critical, error, hilight
+from isomer.component import ConfigurableComponent, handler
+from isomer.debugger import cli_register_event
+from isomer.logger import events, verbose, debug, warn, critical, error, hilight
 
 from . import notify
 
