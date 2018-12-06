@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: UTF-8 -*-
 
-# HFOS - Hackerfleet Operating System
-# ===================================
+# Isomer Application Framework
+# ============================
 # Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
@@ -26,9 +26,9 @@ from setuptools import setup, find_packages
 setup(name="isomer-notifications",
       version="0.0.1",
       description="isomer-notifications",
-      author="Hackerfleet Community",
+      author="Isomer Community",
       author_email="riot@c-base.org",
-      url="https://github.com/hackerfleet/isomer-mail",
+      url="https://github.com/isomeric/isomer-mail",
       license="GNU Affero General Public License v3",
       packages=find_packages(),
       long_description="""isomer - Notifications
@@ -40,12 +40,12 @@ This software package is a plugin module for isomer.
 """,
       dependency_links=[],
       install_requires=[
-          'hfos>=1.2.0'
+          'isomer>=1.0.0'
       ],
       entry_points="""[isomer.components]
-    notifications=hfos.notifications.notificationmanager:NotificationManager
+    notifications=isomer.notifications.notificationmanager:NotificationManager
     [isomer.schemata]
-    notification=hfos.notifications.notification:Notification
+    notification=isomer.notifications.notification:Notification
     """,
       test_suite="tests.main.main",
       )

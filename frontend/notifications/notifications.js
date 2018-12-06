@@ -142,7 +142,7 @@ class notifications {
         self.scope.$on('$destroy', function () {
         });
 
-        //self.socket.listen('hfos.auth.login', self.request_notifications);
+        //self.socket.listen('isomer.auth.login', self.request_notifications);
 
         this.loginupdate = this.rootscope.$on('User.Login', function () {
             console.log('[ROSTER] Just Logged in, getting notifications');
