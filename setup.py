@@ -23,29 +23,30 @@ __license__ = "AGPLv3"
 
 from setuptools import setup, find_packages
 
-setup(name="isomer-notifications",
-      version="0.0.1",
-      description="isomer-notifications",
-      author="Isomer Community",
-      author_email="riot@c-base.org",
-      url="https://github.com/isomeric/isomer-mail",
-      license="GNU Affero General Public License v3",
-      packages=find_packages(),
-      long_description="""isomer - Notifications
+setup(
+    name="isomer-notifications",
+    version="0.0.1",
+    description="isomer-notifications",
+    author="Isomer Community",
+    author_email="riot@c-base.org",
+    url="https://github.com/isomeric/isomer-mail",
+    license="GNU Affero General Public License v3",
+    packages=find_packages(),
+    long_description="""Isomer - Notifications
 ======================
 
-Delivers and manages notifications via multiple transport protocols.
+Notifications delivery and management via multiple transport protocols.
 
 This software package is a plugin module for isomer.
 """,
-      dependency_links=[],
-      install_requires=[
-          'isomer>=1.0.0'
-      ],
-      entry_points="""[isomer.components]
+    dependency_links=[],
+    install_requires=[
+        'isomer>=1.0.0'
+    ],
+    entry_points="""[isomer.components]
     notifications=isomer.notifications.notificationmanager:NotificationManager
     [isomer.schemata]
     notification=isomer.notifications.notification:Notification
     """,
-      test_suite="tests.main.main",
-      )
+    test_suite="tests.main.main",
+)
