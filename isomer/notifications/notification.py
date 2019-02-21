@@ -3,7 +3,7 @@
 
 # Isomer Application Framework
 # ============================
-# Copyright (C) 2011-2018 Heiko 'riot' Weinen <riot@c-base.org> and others.
+# Copyright (C) 2011-2019 Heiko 'riot' Weinen <riot@c-base.org> and others.
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU Affero General Public License as published by
@@ -50,7 +50,7 @@ NotificationSchema['properties'].update({
         'description': _('Notification text')
     },
     'time': {
-        'type': 'integer',
+        'type': 'string',
         'format': 'datetimepicker',
         'title': _('Time'),
         'description': _('When this notification was issued')
@@ -64,7 +64,7 @@ NotificationSchema['properties'].update({
         'type': 'boolean', 'title': _('Acknowledged'),
     },
     'acknowledged_time': {
-        'type': 'integer',
+        'type': 'string',
         'format': 'datetimepicker',
         'title': _('Acknowledged when'),
         'description': _('When this notification was acknowledged')
@@ -77,7 +77,7 @@ NotificationSchema['properties'].update({
                 'default': False
             },
             'by': {
-                'type': 'integer',
+                'type': 'string',
                 'format': 'datetimepicker',
                 'title': _('Acknowledgment due by'),
                 'description': _('Latest time, this notification has to be acknowledged')
