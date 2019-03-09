@@ -3,7 +3,7 @@ import './notifications/notifications.scss';
 import angular from 'angular';
 import uirouter from 'angular-ui-router';
 
-import { routing } from './notifications.config.js';
+import {routing} from './notifications.config.js';
 
 import notificationcomponent from './notifications/notifications';
 import template from './notifications/notifications.tpl.html';
